@@ -1,0 +1,593 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F17EA8B42B928FC2003EE111 /* GolfEventScorer2_2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17EA8B32B928FC2003EE111 /* GolfEventScorer2_2App.swift */; };
+		F17EA8B62B928FC2003EE111 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17EA8B52B928FC2003EE111 /* ContentView.swift */; };
+		F17EA8B82B928FC4003EE111 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F17EA8B72B928FC4003EE111 /* Assets.xcassets */; };
+		F17EA8BB2B928FC4003EE111 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F17EA8BA2B928FC4003EE111 /* Preview Assets.xcassets */; };
+		F17EA8C52B928FC5003EE111 /* GolfEventScorer2_2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17EA8C42B928FC5003EE111 /* GolfEventScorer2_2Tests.swift */; };
+		F17EA8CF2B928FC5003EE111 /* GolfEventScorer2_2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17EA8CE2B928FC5003EE111 /* GolfEventScorer2_2UITests.swift */; };
+		F17EA8D12B928FC5003EE111 /* GolfEventScorer2_2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17EA8D02B928FC5003EE111 /* GolfEventScorer2_2UITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F17EA8C12B928FC5003EE111 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F17EA8A82B928FC2003EE111 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F17EA8AF2B928FC2003EE111;
+			remoteInfo = GolfEventScorer2.2;
+		};
+		F17EA8CB2B928FC5003EE111 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F17EA8A82B928FC2003EE111 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F17EA8AF2B928FC2003EE111;
+			remoteInfo = GolfEventScorer2.2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F17EA8B02B928FC2003EE111 /* GolfEventScorer2.2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GolfEventScorer2.2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F17EA8B32B928FC2003EE111 /* GolfEventScorer2_2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolfEventScorer2_2App.swift; sourceTree = "<group>"; };
+		F17EA8B52B928FC2003EE111 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F17EA8B72B928FC4003EE111 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F17EA8BA2B928FC4003EE111 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F17EA8C02B928FC5003EE111 /* GolfEventScorer2.2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GolfEventScorer2.2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F17EA8C42B928FC5003EE111 /* GolfEventScorer2_2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolfEventScorer2_2Tests.swift; sourceTree = "<group>"; };
+		F17EA8CA2B928FC5003EE111 /* GolfEventScorer2.2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GolfEventScorer2.2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F17EA8CE2B928FC5003EE111 /* GolfEventScorer2_2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolfEventScorer2_2UITests.swift; sourceTree = "<group>"; };
+		F17EA8D02B928FC5003EE111 /* GolfEventScorer2_2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolfEventScorer2_2UITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F17EA8AD2B928FC2003EE111 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F17EA8BD2B928FC5003EE111 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F17EA8C72B928FC5003EE111 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F17EA8A72B928FC2003EE111 = {
+			isa = PBXGroup;
+			children = (
+				F17EA8B22B928FC2003EE111 /* GolfEventScorer2.2 */,
+				F17EA8C32B928FC5003EE111 /* GolfEventScorer2.2Tests */,
+				F17EA8CD2B928FC5003EE111 /* GolfEventScorer2.2UITests */,
+				F17EA8B12B928FC2003EE111 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F17EA8B12B928FC2003EE111 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F17EA8B02B928FC2003EE111 /* GolfEventScorer2.2.app */,
+				F17EA8C02B928FC5003EE111 /* GolfEventScorer2.2Tests.xctest */,
+				F17EA8CA2B928FC5003EE111 /* GolfEventScorer2.2UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F17EA8B22B928FC2003EE111 /* GolfEventScorer2.2 */ = {
+			isa = PBXGroup;
+			children = (
+				F17EA8B32B928FC2003EE111 /* GolfEventScorer2_2App.swift */,
+				F17EA8B52B928FC2003EE111 /* ContentView.swift */,
+				F17EA8B72B928FC4003EE111 /* Assets.xcassets */,
+				F17EA8B92B928FC4003EE111 /* Preview Content */,
+			);
+			path = GolfEventScorer2.2;
+			sourceTree = "<group>";
+		};
+		F17EA8B92B928FC4003EE111 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F17EA8BA2B928FC4003EE111 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F17EA8C32B928FC5003EE111 /* GolfEventScorer2.2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F17EA8C42B928FC5003EE111 /* GolfEventScorer2_2Tests.swift */,
+			);
+			path = GolfEventScorer2.2Tests;
+			sourceTree = "<group>";
+		};
+		F17EA8CD2B928FC5003EE111 /* GolfEventScorer2.2UITests */ = {
+			isa = PBXGroup;
+			children = (
+				F17EA8CE2B928FC5003EE111 /* GolfEventScorer2_2UITests.swift */,
+				F17EA8D02B928FC5003EE111 /* GolfEventScorer2_2UITestsLaunchTests.swift */,
+			);
+			path = GolfEventScorer2.2UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F17EA8AF2B928FC2003EE111 /* GolfEventScorer2.2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F17EA8D42B928FC5003EE111 /* Build configuration list for PBXNativeTarget "GolfEventScorer2.2" */;
+			buildPhases = (
+				F17EA8AC2B928FC2003EE111 /* Sources */,
+				F17EA8AD2B928FC2003EE111 /* Frameworks */,
+				F17EA8AE2B928FC2003EE111 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GolfEventScorer2.2;
+			productName = GolfEventScorer2.2;
+			productReference = F17EA8B02B928FC2003EE111 /* GolfEventScorer2.2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F17EA8BF2B928FC5003EE111 /* GolfEventScorer2.2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F17EA8D72B928FC5003EE111 /* Build configuration list for PBXNativeTarget "GolfEventScorer2.2Tests" */;
+			buildPhases = (
+				F17EA8BC2B928FC5003EE111 /* Sources */,
+				F17EA8BD2B928FC5003EE111 /* Frameworks */,
+				F17EA8BE2B928FC5003EE111 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F17EA8C22B928FC5003EE111 /* PBXTargetDependency */,
+			);
+			name = GolfEventScorer2.2Tests;
+			productName = GolfEventScorer2.2Tests;
+			productReference = F17EA8C02B928FC5003EE111 /* GolfEventScorer2.2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F17EA8C92B928FC5003EE111 /* GolfEventScorer2.2UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F17EA8DA2B928FC5003EE111 /* Build configuration list for PBXNativeTarget "GolfEventScorer2.2UITests" */;
+			buildPhases = (
+				F17EA8C62B928FC5003EE111 /* Sources */,
+				F17EA8C72B928FC5003EE111 /* Frameworks */,
+				F17EA8C82B928FC5003EE111 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F17EA8CC2B928FC5003EE111 /* PBXTargetDependency */,
+			);
+			name = GolfEventScorer2.2UITests;
+			productName = GolfEventScorer2.2UITests;
+			productReference = F17EA8CA2B928FC5003EE111 /* GolfEventScorer2.2UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F17EA8A82B928FC2003EE111 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					F17EA8AF2B928FC2003EE111 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					F17EA8BF2B928FC5003EE111 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = F17EA8AF2B928FC2003EE111;
+					};
+					F17EA8C92B928FC5003EE111 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = F17EA8AF2B928FC2003EE111;
+					};
+				};
+			};
+			buildConfigurationList = F17EA8AB2B928FC2003EE111 /* Build configuration list for PBXProject "GolfEventScorer2.2" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F17EA8A72B928FC2003EE111;
+			productRefGroup = F17EA8B12B928FC2003EE111 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F17EA8AF2B928FC2003EE111 /* GolfEventScorer2.2 */,
+				F17EA8BF2B928FC5003EE111 /* GolfEventScorer2.2Tests */,
+				F17EA8C92B928FC5003EE111 /* GolfEventScorer2.2UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F17EA8AE2B928FC2003EE111 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F17EA8BB2B928FC4003EE111 /* Preview Assets.xcassets in Resources */,
+				F17EA8B82B928FC4003EE111 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F17EA8BE2B928FC5003EE111 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F17EA8C82B928FC5003EE111 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F17EA8AC2B928FC2003EE111 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F17EA8B62B928FC2003EE111 /* ContentView.swift in Sources */,
+				F17EA8B42B928FC2003EE111 /* GolfEventScorer2_2App.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F17EA8BC2B928FC5003EE111 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F17EA8C52B928FC5003EE111 /* GolfEventScorer2_2Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F17EA8C62B928FC5003EE111 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F17EA8CF2B928FC5003EE111 /* GolfEventScorer2_2UITests.swift in Sources */,
+				F17EA8D12B928FC5003EE111 /* GolfEventScorer2_2UITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F17EA8C22B928FC5003EE111 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F17EA8AF2B928FC2003EE111 /* GolfEventScorer2.2 */;
+			targetProxy = F17EA8C12B928FC5003EE111 /* PBXContainerItemProxy */;
+		};
+		F17EA8CC2B928FC5003EE111 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F17EA8AF2B928FC2003EE111 /* GolfEventScorer2.2 */;
+			targetProxy = F17EA8CB2B928FC5003EE111 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F17EA8D22B928FC5003EE111 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F17EA8D32B928FC5003EE111 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F17EA8D52B928FC5003EE111 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GolfEventScorer2.2/Preview Content\"";
+				DEVELOPMENT_TEAM = VVHY8HU89F;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.john.GolfEventScorer2-2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F17EA8D62B928FC5003EE111 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"GolfEventScorer2.2/Preview Content\"";
+				DEVELOPMENT_TEAM = VVHY8HU89F;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.john.GolfEventScorer2-2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F17EA8D82B928FC5003EE111 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VVHY8HU89F;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.john.GolfEventScorer2-2Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GolfEventScorer2.2.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GolfEventScorer2.2";
+			};
+			name = Debug;
+		};
+		F17EA8D92B928FC5003EE111 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VVHY8HU89F;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.john.GolfEventScorer2-2Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GolfEventScorer2.2.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GolfEventScorer2.2";
+			};
+			name = Release;
+		};
+		F17EA8DB2B928FC5003EE111 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VVHY8HU89F;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.john.GolfEventScorer2-2UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GolfEventScorer2.2;
+			};
+			name = Debug;
+		};
+		F17EA8DC2B928FC5003EE111 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VVHY8HU89F;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.john.GolfEventScorer2-2UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GolfEventScorer2.2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F17EA8AB2B928FC2003EE111 /* Build configuration list for PBXProject "GolfEventScorer2.2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F17EA8D22B928FC5003EE111 /* Debug */,
+				F17EA8D32B928FC5003EE111 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F17EA8D42B928FC5003EE111 /* Build configuration list for PBXNativeTarget "GolfEventScorer2.2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F17EA8D52B928FC5003EE111 /* Debug */,
+				F17EA8D62B928FC5003EE111 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F17EA8D72B928FC5003EE111 /* Build configuration list for PBXNativeTarget "GolfEventScorer2.2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F17EA8D82B928FC5003EE111 /* Debug */,
+				F17EA8D92B928FC5003EE111 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F17EA8DA2B928FC5003EE111 /* Build configuration list for PBXNativeTarget "GolfEventScorer2.2UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F17EA8DB2B928FC5003EE111 /* Debug */,
+				F17EA8DC2B928FC5003EE111 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F17EA8A82B928FC2003EE111 /* Project object */;
+}
