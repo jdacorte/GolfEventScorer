@@ -11,85 +11,89 @@ struct EventPlayerSelector: View {
     @EnvironmentObject var gES: GolfEventScorer
     @Environment(\.dismiss) private var dismiss
     var event: Event
+    @State private var copyOfPlayersInEvent = [Player]()
+    @State private var playersNotInEvent = [Player]()
     
     var body: some View {
         VStack {
-            Text("Event Players Edit")
+            Text(event.name).font(.pageTitleFont)
             Text("")
             Text("Sort Players by Name, HI, Team")
             Text("")
-            HStack {
-                Text("Players Included")
-                Text("Players Available")
-            }
+            
             GeometryReader { geometry in
                 HStack{
-                    if event.players.count > 0 {
+                    VStack {
+                        Text("Included Players")
                         ScrollView {
-                            ForEach(event.players) { player in
+                            ForEach(copyOfPlayersInEvent) { player in
                                 Button {
-                                    gES.removePlayerFromEvent(event: event, player: player)
-                                } label: {
-                                    PlayerSummary(player: player)
-                                }
-                            }
-                        }.frame(width: geometry.size.width * 0.5)
-                    }
-                    
-                    if event.playersAvailable.count > 0 {
-                        ScrollView {
-                            ForEach(event.playersAvailable) { player in
-                                
-                                Button {
-                                    gES.addPlayerToEvent(event: event, player: player)
+                                    playersNotInEvent.append(player)
+                                    copyOfPlayersInEvent.removeAll(where: { $0.id == player.id })
                                 } label: {
                                     PlayerSummary(player: player)
                                 }
                             }
                         }
-                        .frame(width: geometry.size.width * 0.5)
                     }
-                }
+                    .padding(5)
+                    .frame(width: geometry.size.width * 0.5)
+                    VStack {
+                        Text("Available Players")
+                        ScrollView {
+                            ForEach(playersNotInEvent) { player in
+                                
+                                Button {
+                                    copyOfPlayersInEvent.append(player)
+                                    playersNotInEvent.removeAll(where: { $0.id == player.id })
+                                } label: {
+                                    PlayerSummary(player: player)
+                                }
+                            }
+                            
+                        }
+                    }
                     
-                
+                    .padding(.trailing, 15)
+                    .padding(.top, 5)
+                    .padding(.bottom, 5)
+                    .frame(width: geometry.size.width * 0.5)
+                    
+                }
             }
-            
         }
         .onAppear { initPlayersForEvent() }
         
         .toolbar {
-            ToolbarItem(placement: .navigation) {
+            ToolbarItem(placement: .navigationBarLeading) {
                 Button {
                     dismiss()
                 } label: {
                     Text("Cancel")
                 }
             }
+            
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button {
+//                    gES.modifyPlayersInEvent(event: event, newPlayerList: copyOfPlayersInEvent)
+                    gES.modifyPlayersInScorecardGrid(event, newPlayerList: copyOfPlayersInEvent)
+//                    gES.modifyPlayersInScorecardGrid(event: event, newPlayerList: copyOfPlayersInEvent)
+                    dismiss()
+                } label: {
+                    Text("Save")
+                }
+            }
         }
-        //                ToolbarItem(placement: .navigationBarTrailing) {
-        //                    Button {
-        //                        if teeCopy.siInputOK {
-        //                            print("siInput is OK")
-        //                        }
-        //                        else {
-        //                            print("siInput is NOT OK")
-        //                        }
-        //                        if isNew {
-        //                            gES.addCourseTee(course: course, tee: teeCopy)
-        //                            dismiss()
-        //                        } else {
-        //                            gES.modifyCourseTee(course: course, tee: teeCopy)
-        //                            dismiss()
-        //                        }
-        //                    } label: {
-        //                        Text("Save")
-        //                    }
     }
     
-    
-        func initPlayersForEvent() {
-            gES.preparePlayerListsForEvent(event)
+    func initPlayersForEvent() {
+        copyOfPlayersInEvent = event.playersInEvent
+        for player in gES.players {
+            if !copyOfPlayersInEvent.contains(where: { $0.id == player.id }) {
+                playersNotInEvent.append(player)
+            }
         }
+    }
 }
 
 //#Preview {

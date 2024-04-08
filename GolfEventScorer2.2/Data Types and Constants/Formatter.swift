@@ -7,12 +7,11 @@
 
 import SwiftUI
 
-struct Formatter: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-#Preview {
-    Formatter()
+extension Formatter {
+    static let scoreFormat: NumberFormatter = {
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .none
+        formatter.zeroSymbol  = ""     // Show empty string instead of zero
+        return formatter
+    }()
 }

@@ -8,8 +8,31 @@
 import SwiftUI
 
 struct CourseList: View {
+    @EnvironmentObject var gES: GolfEventScorer
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            VStack {
+                Text("Courses").font(.pageTitleFont)
+                ScrollView {
+                    ForEach(gES.courses) { course in
+                        NavigationLink {
+                            CourseDetail(course: course)
+                        } label: {
+                            CourseSummary(course: course)
+                        }
+                    }
+                }
+            }
+            .padding()
+            .toolbar {
+                NavigationLink {
+                    CourseEditor(course: Course(), isNew: true)
+                } label: {
+                    Image(systemName: "plus")
+                }
+            }
+        }
     }
 }
 

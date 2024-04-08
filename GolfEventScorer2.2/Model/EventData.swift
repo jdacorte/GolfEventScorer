@@ -8,31 +8,33 @@
 import SwiftUI
 
 extension GolfEventScorer {
-//    @Published var players = [Player]()
-//    @Published var events = [Course]()
-//    @Published var events = [Event]()
-//    
-    func delete(_ event: Event) {
+ 
+    func deleteEvent(_ event: Event) {
         events.removeAll { $0.id == event.id }
     }
     
-    func add(_ event: Event) {
+    func addEvent(_ event: Event) {
         events.append(event)
     }
     
-    func modify(_ event: Event) {
+    func modifyEvent(_ event: Event) {
         if let index = events.firstIndex(where: { $0.id == event.id }) {
             events[index] = event
         }
     }
     
-    func copy(_ event: Event) {
+    func copyEvent(_ event: Event) {
         events.append(event)
         let lastEventIndex = events.count - 1
         events[lastEventIndex].id = UUID()
         events[lastEventIndex].name = "Copy of " + event.name
+        events[lastEventIndex].started = false
     }
     
+    func getEventIndex(_ event: Event)->Int {
+//        print(events.firstIndex(where: {$0.id == event.id}) ?? 0)
+        return events.firstIndex(where: {$0.id == event.id}) ?? 0
+    }
     
 }
 

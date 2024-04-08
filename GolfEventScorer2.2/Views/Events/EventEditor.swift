@@ -8,83 +8,44 @@
 import SwiftUI
 
 struct EventEditor: View {
-    @EnvironmentObject var eventData: EventData
+    @EnvironmentObject var gES: GolfEventScorer
     @Environment(\.dismiss) private var dismiss
-    
     var event: Event
     var isNew: Bool
-    
-    @State private var isDeleted = false
-  
-    // Keep a local copy in case we make edits, so we don't disrupt the list of events.
-    // This is important for when the date changes and puts the event in a different section.
     @State private var eventCopy = Event()
-    @State private var isEditing = false
-    
-//    private var isEventDeleted: Bool {
-//        !eventData.exists(event) && !isNew
-//    }
-    
+
     var body: some View {
         VStack {
-            EventDetail(event: eventCopy, isEditing: isNew ? true : isEditing)
-                .toolbar {
-//                    ToolbarItem(placement: .cancellationAction) {
-//                        if isNew {
-//                            Button("Cancel") {
-//                                dismiss()
-//                            }
-//                        }
-//                    }
-                    ToolbarItem {
-                        Button {
-                            if isNew {
-                                eventData.add(event)
-//                                eventData.events.append(eventCopy)
-                                dismiss()
-                            } else {
-                                if isEditing && !isDeleted {
-                                    print("Done, saving any changes to \(event.name).")
-                                    withAnimation {
-//                                        event = eventCopy // Put edits (if any) back in the store.
-                                    }
-                                }
-                                isEditing.toggle()
-                            }
-                        } label: {
-                            Text(isNew ? "Add" : (isEditing ? "Done" : "Edit"))
-                        }
+            TextField("Event Name", text: $eventCopy.name)
+                .multilineTextAlignment(.center)
+                .textFieldStyle(.roundedBorder)
+                .disableAutocorrection(true)
+            DatePicker("Date", selection: $eventCopy.date, displayedComponents: .date)
+                .labelsHidden()
+                .listRowSeparator(.hidden)
+            Toggle("Use Handicap", isOn: $eventCopy.useHandicap).frame(width: 150).padding(10).toggleStyle(.switch)
+            Toggle("Teams", isOn: $eventCopy.playingTeams).frame(width: 150).padding(10).toggleStyle(.switch)
+            Spacer()
+        }
+        .onAppear {
+            eventCopy = event // Grab a copy in case we decide to make edits.
+        }
+        .toolbar {
+            ToolbarItem {
+                Button {
+                    if isNew {
+                        gES.addEvent(eventCopy)
+                        dismiss()
+                    } else {
+                        gES.modifyEvent(eventCopy)
+                        dismiss()
                     }
+                } label: {
+                    Text("Save")
                 }
-                .onAppear {
-                    eventCopy = event // Grab a copy in case we decide to make edits.
-                }
-//                .disabled(isEventDeleted)
-
-            if isEditing && !isNew {
-
-                Button(role: .destructive, action: {
-                    isDeleted = true
-                    dismiss()
-                    eventData.delete(event)
-                }, label: {
-                    Label("Delete Event", systemImage: "trash.circle.fill")
-                        .font(.title2)
-                        .foregroundColor(.red)
-                })
-                    .padding()
             }
         }
-//        .overlay(alignment: .center) {
-//            if isEventDeleted {
-//                Color(UIColor.systemBackground)
-//                Text("Event Deleted. Select an Event.")
-//                    .foregroundStyle(.secondary)
-//            }
-//        }
     }
 }
 
-//#Preview {
-//    EventEditor()
-//}
+

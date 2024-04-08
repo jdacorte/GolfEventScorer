@@ -13,35 +13,25 @@ struct ScorecardGrid: View {
     var event: Event
     @Binding var offset: Int
     @Binding var scorecardCopy: [[ScorecardResultData]]
-//    @Binding scorecardCopy = [[ScorecardResultData]](repeating: [ScorecardResultData](repeating: ScorecardResultData(), count: 6), count: 100)
+    @State private var entryIndex: Int = 0
+    //    @Binding scorecardCopy = [[ScorecardResultData]](repeating: [ScorecardResultData](repeating: ScorecardResultData(), count: 6), count: 100)
     var body: some View {
+        ScrollView {
         Grid(horizontalSpacing: K.Scorecard.gridSpacing,verticalSpacing: K.Scorecard.gridSpacing) {
-            ForEach(Array(event.playersInEvent.enumerated()), id: \.element) { playerIndex, player in
-                GridRow {
-                    Text(player.name).frame(width: K.Scorecard.rowHeaderWidth).padding(10)
-                    ForEach(0..<K.Scorecard.scoresDisplayed, id: \.self) { entry in
-                        ZStack {
-                            let shape = RoundedRectangle(cornerRadius: K.General.itemCornerRadius)
-                            shape.fill().foregroundColor(.white)
-                            shape.strokeBorder(lineWidth: K.General.itemLineWidth).frame(width: K.Scorecard.boxWidth, height: K.Scorecard.boxHeight)
-                            TextField("",value: $scorecardCopy[playerIndex][entry + offset].rawScore,format: .number)
-                                .padding(1)
-                                .multilineTextAlignment(.center)
-                                .foregroundColor(.black)
+            
+                ForEach(Array(event.playersInEvent.enumerated()), id: \.element) { playerIndex, player in
+                    
+                    GridRow {
+                        Text(player.name).frame(width: K.Scorecard.rowHeaderWidth).padding(10)
+                        ForEach(0..<K.Scorecard.scoresDisplayed, id: \.self) { entry in
+                            ScorecardGridBox(event: event, playerIndex: playerIndex, entryIndex: entry + offset, value: $scorecardCopy[playerIndex][entry + offset].rawScore)
                         }
                     }
+                    .frame(height: K.Scorecard.boxHeight)
+                    
                 }
-                .frame(height: K.Scorecard.boxHeight)
-                
             }
-//            .onAppear {
-//                scorecardCopy = event.scorecard
-//            }
-            
-            
-            // PUT A DISMISS INSTEAD OF THE NAVIGATION VIEW BACK BUTTON-SEE IF THAT WORKS
         }
-        
     }
 }
 

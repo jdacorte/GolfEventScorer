@@ -8,11 +8,46 @@
 import SwiftUI
 
 struct CourseEditor: View {
+    @EnvironmentObject var gES: GolfEventScorer
+    @Environment(\.dismiss) private var dismiss
+    var course: Course
+    var isNew: Bool
+    @State private var courseCopy = Course()
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            TextField("Course Name", text: $courseCopy.name)
+                .multilineTextAlignment(.center)
+                .textFieldStyle(.roundedBorder)
+                .disableAutocorrection(true)
+            TextField("Course Location", text: $courseCopy.location)
+                .multilineTextAlignment(.center)
+                .textFieldStyle(.roundedBorder)
+                .disableAutocorrection(true)
+            
+            Spacer()
+        }
+        .onAppear {
+            courseCopy = course // Grab a copy in case we decide to make edits.
+        }
+        .toolbar {
+            ToolbarItem {
+                Button {
+                    if isNew {
+                        gES.addCourse(courseCopy)
+                        dismiss()
+                    } else {
+                        gES.modifyCourse(courseCopy)
+                        dismiss()
+                    }
+                } label: {
+                    Text("Save")
+                }
+            }
+        }
     }
 }
 
-#Preview {
-    CourseEditor()
-}
+//#Preview {
+//    CourseEditor()
+//}

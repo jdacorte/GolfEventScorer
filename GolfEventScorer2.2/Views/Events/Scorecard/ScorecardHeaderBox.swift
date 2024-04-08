@@ -8,11 +8,25 @@
 import SwiftUI
 
 struct ScorecardHeaderBox: View {
+    var value: String
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ZStack {
+           
+            let shape = RoundedRectangle(cornerRadius: K.General.itemCornerRadius)
+            shape.fill().foregroundColor(.white)
+            shape.strokeBorder(lineWidth: K.General.itemLineWidth).frame(width: 40, height: K.Scorecard.boxHeight)
+           
+            Text(value)
+            .foregroundColor(.black)
+//            .padding()
+            
+            
+        }
+
+        .foregroundColor(.green)
     }
 }
 
-#Preview {
-    ScorecardHeaderBox()
-}
+//#Preview {
+//    ScorecardHeaderBox()
+//}

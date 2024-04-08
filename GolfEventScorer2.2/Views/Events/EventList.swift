@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct EventList: View {
-    @Environment(GolfEventScorer.self) private var gES
+    @EnvironmentObject var gES: GolfEventScorer
+    
     var body: some View {
         NavigationView {
             VStack {
-//                Text("Events").font(.title)
+                Text("Events").font(.pageTitleFont)
                 ScrollView {
                     ForEach(gES.events) { event in
                         NavigationLink {
@@ -23,19 +24,15 @@ struct EventList: View {
                     }
                 }
             }
-            .navigationTitle("Events").font(.title)
             .padding()
             .toolbar {
                 NavigationLink {
-                    EventDetail(event: EventData())
+                    EventEditor(event: Event(), isNew: true)
                 } label: {
                     Image(systemName: "plus")
                 }
             }
         }
-        
-    
-
     }
 }
 

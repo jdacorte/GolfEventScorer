@@ -8,11 +8,18 @@
 import SwiftUI
 
 struct HoleYardageEditor: View {
+    @Binding var tee: Tee
+    var hole: Int
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            TextField( "Yards",value: $tee.holes[hole].yards,format: .number)
+                .textFieldStyle(.roundedBorder)
+                .multilineTextAlignment(.center)
+        }
     }
 }
 
-#Preview {
-    HoleYardageEditor()
-}
+//#Preview {
+//    HoleYardageEditor()
+//}

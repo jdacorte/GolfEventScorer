@@ -8,5 +8,17 @@
 import SwiftUI
 
 extension GolfEventScorer {
-    
+    func deletePlayer(_ player: Player) {
+        players.removeAll { $0.id == player.id }
+    }
+
+    func addPlayer(_ player: Player) {
+        players.append(player)
+    }
+
+    func modifyPlayer(_ player: Player) {
+        if let index = players.firstIndex(where: { $0.id == player.id }) {
+            players[index] = player
+        }
+    }
 }

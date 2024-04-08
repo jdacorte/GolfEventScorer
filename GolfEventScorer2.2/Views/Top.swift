@@ -14,16 +14,16 @@ struct Top: View {
                 .tabItem {
                     Label("Home", systemImage: "house")
                 }
-            Players()
+            PlayerList()
                 .tabItem {
                     Label("Players", systemImage: "figure.golf")
                 }
             
-            Courses()
+            CourseList()
                 .tabItem {
                     Label("Courses", systemImage: "capsule.fill")
                 }
-            Events()
+            EventList()
                 .tabItem {
                     Label("Events", systemImage: "calendar")
                 }

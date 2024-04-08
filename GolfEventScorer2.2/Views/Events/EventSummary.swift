@@ -8,12 +8,26 @@
 import SwiftUI
 
 struct EventSummary: View {
-    var event: EventData
+    var event: Event
+    
     var body: some View {
-        Text("Event Info")
+        ZStack {
+            let shape = RoundedRectangle(cornerRadius: K.General.itemCornerRadius)
+            shape.fill().foregroundColor(.white)
+            shape.strokeBorder(lineWidth: K.General.itemLineWidth)
+            VStack (alignment: .leading){
+                Text(event.name)
+                    .font(.title3).frame(maxWidth: .infinity, alignment: .leading)
+                Text(event.date, format: .dateTime.day().month().year())
+                    .font(.subheadline).frame(maxWidth: .infinity, alignment: .leading)
+            }
+            .foregroundColor(.black)
+            .padding()
+        }
+        .foregroundColor(.purple)
     }
 }
 
 #Preview {
-    EventSummary(event: EventData())
+    EventSummary(event: Event())
 }

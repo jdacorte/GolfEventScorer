@@ -7,12 +7,28 @@
 
 import SwiftUI
 
-struct EventPlayerFunctions: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+extension GolfEventScorer {
+    
+    func modifyPlayersInEvent(event: Event, newPlayerList: [Player]) {
+        var oldScorecard = event.scorecardGrid
+        var oldPlayerList = event.playersInEvent
+       
+        let eventIndex = getEventIndex(event)
+        events[eventIndex].playersInEvent.removeAll()
+        events[eventIndex].playersInEvent = newPlayerList
+        
+//        addPlayerToScorecard
+   
+        for (playerIndex, player) in newPlayerList.enumerated() {
+       
+//        for player in newPlayerList {
+            if let indexOldPlayer = oldPlayerList.firstIndex(where: { $0.id == player.id }) {
+                
+                for hole in 0..<event.totalEventHoles {
+                    events[eventIndex].scorecardGrid[playerIndex][hole] = oldScorecard[indexOldPlayer][hole]
+                }
+            }
+        }
     }
-}
 
-#Preview {
-    EventPlayerFunctions()
 }

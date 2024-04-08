@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct GolfEventScorer2_2App: App {
+    @StateObject private var golfEventScorer = GolfEventScorer()
+//    @StateObject private var eventData = EventData()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            Top()
+            .environmentObject(golfEventScorer)
+//            .environmentObject(eventData)
         }
     }
 }

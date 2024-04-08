@@ -16,10 +16,38 @@ struct Course: Identifiable {
 
 struct Tee: Identifiable, Hashable {
     var id = UUID()
-    var color = "Select Tee Color"
+    var color = "Select Tee"
     var rating: Double? = nil
     var slope: Int? = nil
     var parTotal: Int? = nil
+    var parTotalOK: Bool {
+        var parCount = 0
+        let parTotalTemp = parTotal ?? 0
+        for i in 1...18 {
+            parCount += holes[i].par ?? 0
+        }
+        if parCount == parTotalTemp {
+            return true
+        } else {
+            return false
+        }
+    }
+    var strokeIndexInputOK: Bool {
+        var remainingSI = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18]
+        for i in 1...18 {
+            let si = holes[i].strokeIndex ?? 0
+            remainingSI[si] = 0
+        }
+        var remainingSICount = 0
+        for i in 1...18 {
+            remainingSICount += remainingSI[i]
+        }
+        if remainingSICount > 0 {
+            return false
+        } else {
+            return true
+        }
+    }
     var holes = Array(repeating: Hole(), count: 19)
     //  need this function to make Tee Equatable
     static func == (lhs: Tee, rhs: Tee) -> Bool {

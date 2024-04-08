@@ -7,13 +7,57 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F113CCB92BA70DF000EFBBE0 /* HoleParEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F113CCB82BA70DF000EFBBE0 /* HoleParEditor.swift */; };
+		F113CCBB2BA711FB00EFBBE0 /* HoleStrokeIndexEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F113CCBA2BA711FB00EFBBE0 /* HoleStrokeIndexEditor.swift */; };
+		F113CCBD2BA8E81200EFBBE0 /* PlayerList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F113CCBC2BA8E81200EFBBE0 /* PlayerList.swift */; };
+		F113CCBF2BA8E82A00EFBBE0 /* PlayerEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F113CCBE2BA8E82A00EFBBE0 /* PlayerEditor.swift */; };
+		F113CCC12BA9171300EFBBE0 /* EventPlayerFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F113CCC02BA9171300EFBBE0 /* EventPlayerFunctions.swift */; };
 		F17EA8B42B928FC2003EE111 /* GolfEventScorer2_2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17EA8B32B928FC2003EE111 /* GolfEventScorer2_2App.swift */; };
-		F17EA8B62B928FC2003EE111 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17EA8B52B928FC2003EE111 /* ContentView.swift */; };
+		F17EA8B62B928FC2003EE111 /* Top.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17EA8B52B928FC2003EE111 /* Top.swift */; };
 		F17EA8B82B928FC4003EE111 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F17EA8B72B928FC4003EE111 /* Assets.xcassets */; };
 		F17EA8BB2B928FC4003EE111 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F17EA8BA2B928FC4003EE111 /* Preview Assets.xcassets */; };
 		F17EA8C52B928FC5003EE111 /* GolfEventScorer2_2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17EA8C42B928FC5003EE111 /* GolfEventScorer2_2Tests.swift */; };
 		F17EA8CF2B928FC5003EE111 /* GolfEventScorer2_2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17EA8CE2B928FC5003EE111 /* GolfEventScorer2_2UITests.swift */; };
 		F17EA8D12B928FC5003EE111 /* GolfEventScorer2_2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17EA8D02B928FC5003EE111 /* GolfEventScorer2_2UITestsLaunchTests.swift */; };
+		F17EA8DE2B929102003EE111 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17EA8DD2B929102003EE111 /* Home.swift */; };
+		F17EA8E42B929146003EE111 /* EventList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17EA8E32B929146003EE111 /* EventList.swift */; };
+		F17EA8E62B929256003EE111 /* GolfEventScorer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17EA8E52B929256003EE111 /* GolfEventScorer.swift */; };
+		F17EA8E82B9292BA003EE111 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17EA8E72B9292BA003EE111 /* Player.swift */; };
+		F17EA8EA2B9292EE003EE111 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17EA8E92B9292EE003EE111 /* Course.swift */; };
+		F17EA8EE2B929390003EE111 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17EA8ED2B929390003EE111 /* Event.swift */; };
+		F17EA8F22B92944F003EE111 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17EA8F12B92944F003EE111 /* Constants.swift */; };
+		F17EA8F72B92B048003EE111 /* junkPlayerDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17EA8F62B92B048003EE111 /* junkPlayerDetail.swift */; };
+		F17EA8FB2B92B0A1003EE111 /* CourseDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17EA8FA2B92B0A1003EE111 /* CourseDetail.swift */; };
+		F17EA8FD2B92B0BA003EE111 /* EventDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17EA8FC2B92B0BA003EE111 /* EventDetail.swift */; };
+		F17EA9012B92B202003EE111 /* TeeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17EA9002B92B202003EE111 /* TeeList.swift */; };
+		F17EA90A2B92B3F4003EE111 /* PlayerSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17EA9092B92B3F4003EE111 /* PlayerSummary.swift */; };
+		F1D950AE2BBF480600802544 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D950AD2BBF480600802544 /* Formatter.swift */; };
+		F1E527DA2B92C1360012ECCA /* CourseSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E527D92B92C1360012ECCA /* CourseSummary.swift */; };
+		F1E527DC2B92C2970012ECCA /* TeeSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E527DB2B92C2970012ECCA /* TeeSummary.swift */; };
+		F1E527DE2B92CA870012ECCA /* EventSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E527DD2B92CA870012ECCA /* EventSummary.swift */; };
+		F1E527E02B92CDA50012ECCA /* GameSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E527DF2B92CDA50012ECCA /* GameSummary.swift */; };
+		F1E62ADD2BA3D4200062E9A4 /* EventPlayerSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E62ADC2BA3D4200062E9A4 /* EventPlayerSelector.swift */; };
+		F1E62ADF2BA3DBCF0062E9A4 /* EventScorecard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E62ADE2BA3DBCF0062E9A4 /* EventScorecard.swift */; };
+		F1E62AE32BA510AB0062E9A4 /* HoleSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E62AE22BA510AB0062E9A4 /* HoleSelector.swift */; };
+		F1E62AE52BA5E8F00062E9A4 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E62AE42BA5E8F00062E9A4 /* Fonts.swift */; };
+		F1E62AE72BA60A080062E9A4 /* CourseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E62AE62BA60A080062E9A4 /* CourseList.swift */; };
+		F1E62AE92BA60A2C0062E9A4 /* CourseEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E62AE82BA60A2C0062E9A4 /* CourseEditor.swift */; };
+		F1E62AEB2BA60C9F0062E9A4 /* CourseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E62AEA2BA60C9F0062E9A4 /* CourseData.swift */; };
+		F1E62AED2BA60F850062E9A4 /* TeeEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E62AEC2BA60F850062E9A4 /* TeeEditor.swift */; };
+		F1E62AEF2BA61A820062E9A4 /* CourseTeeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E62AEE2BA61A820062E9A4 /* CourseTeeData.swift */; };
+		F1E62AF12BA652C50062E9A4 /* HoleYardageEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E62AF02BA652C50062E9A4 /* HoleYardageEditor.swift */; };
+		F1EAA5BB2BAEEC3600D00CB1 /* EventScorecard Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EAA5BA2BAEEC3600D00CB1 /* EventScorecard Functions.swift */; };
+		F1EAA5BD2BAF228000D00CB1 /* ScorecardHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EAA5BC2BAF228000D00CB1 /* ScorecardHeader.swift */; };
+		F1EAA5BF2BAF22D100D00CB1 /* ScorecardGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EAA5BE2BAF22D100D00CB1 /* ScorecardGrid.swift */; };
+		F1EAA5C12BAF22EB00D00CB1 /* ScorecardNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EAA5C02BAF22EB00D00CB1 /* ScorecardNavigation.swift */; };
+		F1EAA5C32BAF2A4D00D00CB1 /* ScorecardHeaderBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EAA5C22BAF2A4D00D00CB1 /* ScorecardHeaderBox.swift */; };
+		F1EAA5C52BB0603900D00CB1 /* ScorecardGridBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EAA5C42BB0603900D00CB1 /* ScorecardGridBox.swift */; };
+		F1ECD9372B97D98500185B9E /* EventData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1ECD9362B97D98500185B9E /* EventData.swift */; };
+		F1ECD9392B9A814800185B9E /* EventEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1ECD9382B9A814800185B9E /* EventEditor.swift */; };
+		F1ECD93D2B9AAC1500185B9E /* GameList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1ECD93C2B9AAC1500185B9E /* GameList.swift */; };
+		F1ECD93F2B9AAEDF00185B9E /* GameEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1ECD93E2B9AAEDF00185B9E /* GameEditor.swift */; };
+		F1ECD9412B9B2CD200185B9E /* PlayerData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1ECD9402B9B2CD200185B9E /* PlayerData.swift */; };
+		F1ECD9432B9BAE6000185B9E /* EventGameData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1ECD9422B9BAE5F00185B9E /* EventGameData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +78,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F113CCB82BA70DF000EFBBE0 /* HoleParEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoleParEditor.swift; sourceTree = "<group>"; };
+		F113CCBA2BA711FB00EFBBE0 /* HoleStrokeIndexEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoleStrokeIndexEditor.swift; sourceTree = "<group>"; };
+		F113CCBC2BA8E81200EFBBE0 /* PlayerList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerList.swift; sourceTree = "<group>"; };
+		F113CCBE2BA8E82A00EFBBE0 /* PlayerEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerEditor.swift; sourceTree = "<group>"; };
+		F113CCC02BA9171300EFBBE0 /* EventPlayerFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventPlayerFunctions.swift; sourceTree = "<group>"; };
 		F17EA8B02B928FC2003EE111 /* GolfEventScorer2.2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GolfEventScorer2.2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F17EA8B32B928FC2003EE111 /* GolfEventScorer2_2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolfEventScorer2_2App.swift; sourceTree = "<group>"; };
-		F17EA8B52B928FC2003EE111 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F17EA8B52B928FC2003EE111 /* Top.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Top.swift; sourceTree = "<group>"; };
 		F17EA8B72B928FC4003EE111 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F17EA8BA2B928FC4003EE111 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F17EA8C02B928FC5003EE111 /* GolfEventScorer2.2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GolfEventScorer2.2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +93,45 @@
 		F17EA8CA2B928FC5003EE111 /* GolfEventScorer2.2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GolfEventScorer2.2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F17EA8CE2B928FC5003EE111 /* GolfEventScorer2_2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolfEventScorer2_2UITests.swift; sourceTree = "<group>"; };
 		F17EA8D02B928FC5003EE111 /* GolfEventScorer2_2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolfEventScorer2_2UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F17EA8DD2B929102003EE111 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		F17EA8E32B929146003EE111 /* EventList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventList.swift; sourceTree = "<group>"; };
+		F17EA8E52B929256003EE111 /* GolfEventScorer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GolfEventScorer.swift; sourceTree = "<group>"; };
+		F17EA8E72B9292BA003EE111 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		F17EA8E92B9292EE003EE111 /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		F17EA8ED2B929390003EE111 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		F17EA8F12B92944F003EE111 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F17EA8F62B92B048003EE111 /* junkPlayerDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = junkPlayerDetail.swift; sourceTree = "<group>"; };
+		F17EA8FA2B92B0A1003EE111 /* CourseDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseDetail.swift; sourceTree = "<group>"; };
+		F17EA8FC2B92B0BA003EE111 /* EventDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetail.swift; sourceTree = "<group>"; };
+		F17EA9002B92B202003EE111 /* TeeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeeList.swift; sourceTree = "<group>"; };
+		F17EA9092B92B3F4003EE111 /* PlayerSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerSummary.swift; sourceTree = "<group>"; };
+		F1D950AD2BBF480600802544 /* Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
+		F1E527D92B92C1360012ECCA /* CourseSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseSummary.swift; sourceTree = "<group>"; };
+		F1E527DB2B92C2970012ECCA /* TeeSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeeSummary.swift; sourceTree = "<group>"; };
+		F1E527DD2B92CA870012ECCA /* EventSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventSummary.swift; sourceTree = "<group>"; };
+		F1E527DF2B92CDA50012ECCA /* GameSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSummary.swift; sourceTree = "<group>"; };
+		F1E62ADC2BA3D4200062E9A4 /* EventPlayerSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventPlayerSelector.swift; sourceTree = "<group>"; };
+		F1E62ADE2BA3DBCF0062E9A4 /* EventScorecard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventScorecard.swift; sourceTree = "<group>"; };
+		F1E62AE22BA510AB0062E9A4 /* HoleSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoleSelector.swift; sourceTree = "<group>"; };
+		F1E62AE42BA5E8F00062E9A4 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		F1E62AE62BA60A080062E9A4 /* CourseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseList.swift; sourceTree = "<group>"; };
+		F1E62AE82BA60A2C0062E9A4 /* CourseEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseEditor.swift; sourceTree = "<group>"; };
+		F1E62AEA2BA60C9F0062E9A4 /* CourseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseData.swift; sourceTree = "<group>"; };
+		F1E62AEC2BA60F850062E9A4 /* TeeEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeeEditor.swift; sourceTree = "<group>"; };
+		F1E62AEE2BA61A820062E9A4 /* CourseTeeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseTeeData.swift; sourceTree = "<group>"; };
+		F1E62AF02BA652C50062E9A4 /* HoleYardageEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoleYardageEditor.swift; sourceTree = "<group>"; };
+		F1EAA5BA2BAEEC3600D00CB1 /* EventScorecard Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EventScorecard Functions.swift"; sourceTree = "<group>"; };
+		F1EAA5BC2BAF228000D00CB1 /* ScorecardHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScorecardHeader.swift; sourceTree = "<group>"; };
+		F1EAA5BE2BAF22D100D00CB1 /* ScorecardGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScorecardGrid.swift; sourceTree = "<group>"; };
+		F1EAA5C02BAF22EB00D00CB1 /* ScorecardNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScorecardNavigation.swift; sourceTree = "<group>"; };
+		F1EAA5C22BAF2A4D00D00CB1 /* ScorecardHeaderBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScorecardHeaderBox.swift; sourceTree = "<group>"; };
+		F1EAA5C42BB0603900D00CB1 /* ScorecardGridBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScorecardGridBox.swift; sourceTree = "<group>"; };
+		F1ECD9362B97D98500185B9E /* EventData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventData.swift; sourceTree = "<group>"; };
+		F1ECD9382B9A814800185B9E /* EventEditor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventEditor.swift; sourceTree = "<group>"; };
+		F1ECD93C2B9AAC1500185B9E /* GameList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameList.swift; sourceTree = "<group>"; };
+		F1ECD93E2B9AAEDF00185B9E /* GameEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameEditor.swift; sourceTree = "<group>"; };
+		F1ECD9402B9B2CD200185B9E /* PlayerData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerData.swift; sourceTree = "<group>"; };
+		F1ECD9422B9BAE5F00185B9E /* EventGameData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventGameData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +183,10 @@
 			isa = PBXGroup;
 			children = (
 				F17EA8B32B928FC2003EE111 /* GolfEventScorer2_2App.swift */,
-				F17EA8B52B928FC2003EE111 /* ContentView.swift */,
+				F17EA8F42B92987D003EE111 /* Data Types and Constants */,
+				F17EA8F32B929849003EE111 /* Model */,
+				F17EA8DD2B929102003EE111 /* Home.swift */,
+				F17EA8F52B9298A7003EE111 /* Views */,
 				F17EA8B72B928FC4003EE111 /* Assets.xcassets */,
 				F17EA8B92B928FC4003EE111 /* Preview Content */,
 			);
@@ -125,6 +216,127 @@
 				F17EA8D02B928FC5003EE111 /* GolfEventScorer2_2UITestsLaunchTests.swift */,
 			);
 			path = GolfEventScorer2.2UITests;
+			sourceTree = "<group>";
+		};
+		F17EA8F32B929849003EE111 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F17EA8E52B929256003EE111 /* GolfEventScorer.swift */,
+				F1ECD9402B9B2CD200185B9E /* PlayerData.swift */,
+				F1E62AEA2BA60C9F0062E9A4 /* CourseData.swift */,
+				F1E62AEE2BA61A820062E9A4 /* CourseTeeData.swift */,
+				F1ECD9362B97D98500185B9E /* EventData.swift */,
+				F1ECD9422B9BAE5F00185B9E /* EventGameData.swift */,
+				F113CCC02BA9171300EFBBE0 /* EventPlayerFunctions.swift */,
+				F1EAA5BA2BAEEC3600D00CB1 /* EventScorecard Functions.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F17EA8F42B92987D003EE111 /* Data Types and Constants */ = {
+			isa = PBXGroup;
+			children = (
+				F17EA8E72B9292BA003EE111 /* Player.swift */,
+				F17EA8E92B9292EE003EE111 /* Course.swift */,
+				F17EA8ED2B929390003EE111 /* Event.swift */,
+				F17EA8F12B92944F003EE111 /* Constants.swift */,
+				F1E62AE42BA5E8F00062E9A4 /* Fonts.swift */,
+				F1D950AD2BBF480600802544 /* Formatter.swift */,
+			);
+			path = "Data Types and Constants";
+			sourceTree = "<group>";
+		};
+		F17EA8F52B9298A7003EE111 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F17EA8B52B928FC2003EE111 /* Top.swift */,
+				F17EA8F82B92B059003EE111 /* Players */,
+				F17EA8F92B92B07A003EE111 /* Courses */,
+				F17EA8FE2B92B0D0003EE111 /* Events */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F17EA8F82B92B059003EE111 /* Players */ = {
+			isa = PBXGroup;
+			children = (
+				F113CCBC2BA8E81200EFBBE0 /* PlayerList.swift */,
+				F17EA9092B92B3F4003EE111 /* PlayerSummary.swift */,
+				F17EA8F62B92B048003EE111 /* junkPlayerDetail.swift */,
+				F113CCBE2BA8E82A00EFBBE0 /* PlayerEditor.swift */,
+			);
+			path = Players;
+			sourceTree = "<group>";
+		};
+		F17EA8F92B92B07A003EE111 /* Courses */ = {
+			isa = PBXGroup;
+			children = (
+				F1E62AE62BA60A080062E9A4 /* CourseList.swift */,
+				F1E527D92B92C1360012ECCA /* CourseSummary.swift */,
+				F17EA8FA2B92B0A1003EE111 /* CourseDetail.swift */,
+				F1E62AE82BA60A2C0062E9A4 /* CourseEditor.swift */,
+				F17EA8FF2B92B1DB003EE111 /* Tees */,
+			);
+			path = Courses;
+			sourceTree = "<group>";
+		};
+		F17EA8FE2B92B0D0003EE111 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				F17EA8E32B929146003EE111 /* EventList.swift */,
+				F1E527DD2B92CA870012ECCA /* EventSummary.swift */,
+				F17EA8FC2B92B0BA003EE111 /* EventDetail.swift */,
+				F1ECD9382B9A814800185B9E /* EventEditor.swift */,
+				F1E62AE12BA4F9720062E9A4 /* Scorecard */,
+				F1E62AE02BA4F93B0062E9A4 /* Player Selection */,
+				F17EA9042B92B27D003EE111 /* Games */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		F17EA8FF2B92B1DB003EE111 /* Tees */ = {
+			isa = PBXGroup;
+			children = (
+				F17EA9002B92B202003EE111 /* TeeList.swift */,
+				F1E527DB2B92C2970012ECCA /* TeeSummary.swift */,
+				F1E62AEC2BA60F850062E9A4 /* TeeEditor.swift */,
+				F1E62AF02BA652C50062E9A4 /* HoleYardageEditor.swift */,
+				F113CCB82BA70DF000EFBBE0 /* HoleParEditor.swift */,
+				F113CCBA2BA711FB00EFBBE0 /* HoleStrokeIndexEditor.swift */,
+			);
+			path = Tees;
+			sourceTree = "<group>";
+		};
+		F17EA9042B92B27D003EE111 /* Games */ = {
+			isa = PBXGroup;
+			children = (
+				F1ECD93C2B9AAC1500185B9E /* GameList.swift */,
+				F1E527DF2B92CDA50012ECCA /* GameSummary.swift */,
+				F1ECD93E2B9AAEDF00185B9E /* GameEditor.swift */,
+				F1E62AE22BA510AB0062E9A4 /* HoleSelector.swift */,
+			);
+			path = Games;
+			sourceTree = "<group>";
+		};
+		F1E62AE02BA4F93B0062E9A4 /* Player Selection */ = {
+			isa = PBXGroup;
+			children = (
+				F1E62ADC2BA3D4200062E9A4 /* EventPlayerSelector.swift */,
+			);
+			path = "Player Selection";
+			sourceTree = "<group>";
+		};
+		F1E62AE12BA4F9720062E9A4 /* Scorecard */ = {
+			isa = PBXGroup;
+			children = (
+				F1E62ADE2BA3DBCF0062E9A4 /* EventScorecard.swift */,
+				F1EAA5BC2BAF228000D00CB1 /* ScorecardHeader.swift */,
+				F1EAA5C22BAF2A4D00D00CB1 /* ScorecardHeaderBox.swift */,
+				F1EAA5BE2BAF22D100D00CB1 /* ScorecardGrid.swift */,
+				F1EAA5C42BB0603900D00CB1 /* ScorecardGridBox.swift */,
+				F1EAA5C02BAF22EB00D00CB1 /* ScorecardNavigation.swift */,
+			);
+			path = Scorecard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +469,52 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F17EA8B62B928FC2003EE111 /* ContentView.swift in Sources */,
+				F17EA8E42B929146003EE111 /* EventList.swift in Sources */,
+				F113CCBF2BA8E82A00EFBBE0 /* PlayerEditor.swift in Sources */,
+				F17EA8E62B929256003EE111 /* GolfEventScorer.swift in Sources */,
+				F17EA8E82B9292BA003EE111 /* Player.swift in Sources */,
+				F17EA9012B92B202003EE111 /* TeeList.swift in Sources */,
+				F1E527DE2B92CA870012ECCA /* EventSummary.swift in Sources */,
+				F1ECD9432B9BAE6000185B9E /* EventGameData.swift in Sources */,
+				F1E62ADF2BA3DBCF0062E9A4 /* EventScorecard.swift in Sources */,
+				F113CCBD2BA8E81200EFBBE0 /* PlayerList.swift in Sources */,
+				F1EAA5BF2BAF22D100D00CB1 /* ScorecardGrid.swift in Sources */,
+				F1ECD9412B9B2CD200185B9E /* PlayerData.swift in Sources */,
+				F1EAA5BB2BAEEC3600D00CB1 /* EventScorecard Functions.swift in Sources */,
+				F1E527DA2B92C1360012ECCA /* CourseSummary.swift in Sources */,
+				F1ECD9372B97D98500185B9E /* EventData.swift in Sources */,
+				F17EA8EE2B929390003EE111 /* Event.swift in Sources */,
+				F1EAA5BD2BAF228000D00CB1 /* ScorecardHeader.swift in Sources */,
+				F113CCB92BA70DF000EFBBE0 /* HoleParEditor.swift in Sources */,
+				F1ECD93F2B9AAEDF00185B9E /* GameEditor.swift in Sources */,
+				F1E527DC2B92C2970012ECCA /* TeeSummary.swift in Sources */,
+				F1E62AEF2BA61A820062E9A4 /* CourseTeeData.swift in Sources */,
+				F1E527E02B92CDA50012ECCA /* GameSummary.swift in Sources */,
+				F17EA8F72B92B048003EE111 /* junkPlayerDetail.swift in Sources */,
+				F17EA8F22B92944F003EE111 /* Constants.swift in Sources */,
+				F113CCBB2BA711FB00EFBBE0 /* HoleStrokeIndexEditor.swift in Sources */,
+				F17EA8FD2B92B0BA003EE111 /* EventDetail.swift in Sources */,
+				F17EA90A2B92B3F4003EE111 /* PlayerSummary.swift in Sources */,
+				F1E62AE92BA60A2C0062E9A4 /* CourseEditor.swift in Sources */,
+				F1E62AEB2BA60C9F0062E9A4 /* CourseData.swift in Sources */,
+				F1ECD93D2B9AAC1500185B9E /* GameList.swift in Sources */,
+				F17EA8B62B928FC2003EE111 /* Top.swift in Sources */,
+				F1E62AE32BA510AB0062E9A4 /* HoleSelector.swift in Sources */,
+				F1EAA5C32BAF2A4D00D00CB1 /* ScorecardHeaderBox.swift in Sources */,
+				F1D950AE2BBF480600802544 /* Formatter.swift in Sources */,
+				F1ECD9392B9A814800185B9E /* EventEditor.swift in Sources */,
+				F1E62AE72BA60A080062E9A4 /* CourseList.swift in Sources */,
+				F1E62AE52BA5E8F00062E9A4 /* Fonts.swift in Sources */,
+				F1E62ADD2BA3D4200062E9A4 /* EventPlayerSelector.swift in Sources */,
+				F1E62AED2BA60F850062E9A4 /* TeeEditor.swift in Sources */,
+				F113CCC12BA9171300EFBBE0 /* EventPlayerFunctions.swift in Sources */,
+				F1EAA5C52BB0603900D00CB1 /* ScorecardGridBox.swift in Sources */,
+				F17EA8DE2B929102003EE111 /* Home.swift in Sources */,
+				F17EA8FB2B92B0A1003EE111 /* CourseDetail.swift in Sources */,
+				F1EAA5C12BAF22EB00D00CB1 /* ScorecardNavigation.swift in Sources */,
 				F17EA8B42B928FC2003EE111 /* GolfEventScorer2_2App.swift in Sources */,
+				F1E62AF12BA652C50062E9A4 /* HoleYardageEditor.swift in Sources */,
+				F17EA8EA2B9292EE003EE111 /* Course.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,11 +8,17 @@
 import SwiftUI
 
 struct HoleStrokeIndexEditor: View {
+    @Binding var tee: Tee
+    var hole: Int
+    var availableSI = [Int]()
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            TextField( "SI",value: $tee.holes[hole].strokeIndex,format: .number)
+            .textFieldStyle(.roundedBorder)
+            .multilineTextAlignment(.center)
     }
 }
 
-#Preview {
-    HoleStrokeIndexEditor()
-}
+//#Preview {
+//    HoleStrokeIndexEditor()
+//}

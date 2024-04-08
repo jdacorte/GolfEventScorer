@@ -8,8 +8,14 @@
 import SwiftUI
 
 struct Home: View {
+    @EnvironmentObject var gES: GolfEventScorer
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("Players: \(gES.players.count)")
+            Text("Courses: \(gES.courses.count)")
+            Text("Events: \(gES.events.count)")
+        }
+        
     }
 }
 
