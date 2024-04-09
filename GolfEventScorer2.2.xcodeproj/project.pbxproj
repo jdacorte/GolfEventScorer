@@ -32,6 +32,7 @@
 		F17EA9012B92B202003EE111 /* TeeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17EA9002B92B202003EE111 /* TeeList.swift */; };
 		F17EA90A2B92B3F4003EE111 /* PlayerSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = F17EA9092B92B3F4003EE111 /* PlayerSummary.swift */; };
 		F1D950AE2BBF480600802544 /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D950AD2BBF480600802544 /* Formatter.swift */; };
+		F1D950E62BC4512E00802544 /* ScorecardDataSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D950E52BC4512E00802544 /* ScorecardDataSelector.swift */; };
 		F1E527DA2B92C1360012ECCA /* CourseSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E527D92B92C1360012ECCA /* CourseSummary.swift */; };
 		F1E527DC2B92C2970012ECCA /* TeeSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E527DB2B92C2970012ECCA /* TeeSummary.swift */; };
 		F1E527DE2B92CA870012ECCA /* EventSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1E527DD2B92CA870012ECCA /* EventSummary.swift */; };
@@ -106,6 +107,7 @@
 		F17EA9002B92B202003EE111 /* TeeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeeList.swift; sourceTree = "<group>"; };
 		F17EA9092B92B3F4003EE111 /* PlayerSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerSummary.swift; sourceTree = "<group>"; };
 		F1D950AD2BBF480600802544 /* Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
+		F1D950E52BC4512E00802544 /* ScorecardDataSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScorecardDataSelector.swift; sourceTree = "<group>"; };
 		F1E527D92B92C1360012ECCA /* CourseSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseSummary.swift; sourceTree = "<group>"; };
 		F1E527DB2B92C2970012ECCA /* TeeSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeeSummary.swift; sourceTree = "<group>"; };
 		F1E527DD2B92CA870012ECCA /* EventSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventSummary.swift; sourceTree = "<group>"; };
@@ -335,6 +337,7 @@
 				F1EAA5BE2BAF22D100D00CB1 /* ScorecardGrid.swift */,
 				F1EAA5C42BB0603900D00CB1 /* ScorecardGridBox.swift */,
 				F1EAA5C02BAF22EB00D00CB1 /* ScorecardNavigation.swift */,
+				F1D950E52BC4512E00802544 /* ScorecardDataSelector.swift */,
 			);
 			path = Scorecard;
 			sourceTree = "<group>";
@@ -478,6 +481,7 @@
 				F1ECD9432B9BAE6000185B9E /* EventGameData.swift in Sources */,
 				F1E62ADF2BA3DBCF0062E9A4 /* EventScorecard.swift in Sources */,
 				F113CCBD2BA8E81200EFBBE0 /* PlayerList.swift in Sources */,
+				F1D950E62BC4512E00802544 /* ScorecardDataSelector.swift in Sources */,
 				F1EAA5BF2BAF22D100D00CB1 /* ScorecardGrid.swift in Sources */,
 				F1ECD9412B9B2CD200185B9E /* PlayerData.swift in Sources */,
 				F1EAA5BB2BAEEC3600D00CB1 /* EventScorecard Functions.swift in Sources */,

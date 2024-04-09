@@ -11,6 +11,7 @@ struct EventScorecard: View {
     @EnvironmentObject var gES: GolfEventScorer
     @Environment(\.dismiss) private var dismiss
     var event: Event
+    @State private var scorecardDataType = "Score"
     @State private var scorecardCopy = [[ScorecardResultData]](repeating: [ScorecardResultData](repeating: ScorecardResultData(), count: 6), count: 100)
     
     // offset should be saved in event so it remebers where it was
@@ -19,9 +20,9 @@ struct EventScorecard: View {
         VStack {
             Text(event.name + " Scorecard").font(.pageTitleFont)
             ScorecardHeader(event: event, offset: $offset)
-            ScorecardGrid(event: event, offset: $offset, scorecardCopy: $scorecardCopy)
+            ScorecardGrid(event: event, offset: $offset, scorecardCopy: $scorecardCopy, scorecardDataType: scorecardDataType)
             Spacer()
-//            ScorecardPicker()
+            ScorecardDataSelector(scorecardDataType: $scorecardDataType)
             ScorecardNavigation(numberOfHoles: event.totalEventHoles, offset: $offset)
             
         }
@@ -32,9 +33,7 @@ struct EventScorecard: View {
         .toolbar {
             ToolbarItem(placement: .navigationBarLeading) {
                 Button {
-//                    gES.saveEventScorecard(event: event, scorecard: scorecardCopy)
                     dismiss()
-                    
                 } label: {
                     HStack {
                         Image(systemName: "chevron.left")
